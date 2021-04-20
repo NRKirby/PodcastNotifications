@@ -71,7 +71,7 @@ namespace PodcastNotifications.Functions.Handlers
             private static string GetHtml(string feedTitle, string unsubscribeLink)
                 => $@"
 <h1>Subscription confirmed</h1>
-<p>You will now receive an email when a {feedTitle} episode gets released</p>
+<p>You will now receive an email each time a {feedTitle} episode gets released.</p>
 <p>You can unsubscribe by clicking the link below</p>
 {unsubscribeLink}";
 
