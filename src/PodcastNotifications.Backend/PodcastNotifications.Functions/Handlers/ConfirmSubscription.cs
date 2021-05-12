@@ -72,9 +72,7 @@ namespace PodcastNotifications.Functions.Handlers
                 => $@"
 <h1>Subscription confirmed</h1>
 <p>You will now receive an email each time a {feedTitle} episode gets released.</p>
-<p>You can unsubscribe by clicking the link below</p>
-{unsubscribeLink}";
-
+<p>You can <a href=""{unsubscribeLink}"">unsubscribe</a> at any time</p>";
         }
     }
 }
