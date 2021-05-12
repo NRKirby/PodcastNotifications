@@ -20,8 +20,9 @@ export default function Podcasts() {
             podcasts.forEach(index => {
                 let podcastsForIndex = []
                 index.data.forEach(podcast => {
-                    if (podcast.title.toLowerCase().includes(input.toLowerCase())) {
-                        podcastsForIndex.push(podcast)
+                    if (podcast.title.toLowerCase().includes(input.toLowerCase() ||
+                        podcast.description.toLowerCase().includes(input.toLowerCase()))) {
+                            podcastsForIndex.push(podcast)
                     }
                 })
                 if (podcastsForIndex.length > 0) {
@@ -71,7 +72,7 @@ export default function Podcasts() {
                                     name="email"
                                     id="email"
                                     className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                                    placeholder="search podcasts"
+                                    placeholder="search"
                                     onChange={(e) => search(e.target.value)}
                                 />
                             </div>
