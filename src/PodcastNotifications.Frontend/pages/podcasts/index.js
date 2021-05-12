@@ -29,12 +29,9 @@ export default function Podcasts() {
                         index: index.index,
                         data: podcastsForIndex
                     })
-                }                
+                }
             });
-            if (filtered.length > 0){
-                console.log(filtered)
-                setFilteredPodcasts(filtered);
-            }           
+            setFilteredPodcasts(filtered);
         } else {
             setFilteredPodcasts(podcasts);
         }
