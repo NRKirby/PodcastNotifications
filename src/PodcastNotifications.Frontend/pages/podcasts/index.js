@@ -20,8 +20,7 @@ export default function Podcasts() {
             podcasts.forEach(index => {
                 let podcastsForIndex = []
                 index.data.forEach(podcast => {
-                    if (podcast.title.toLowerCase().includes(input.toLowerCase() ||
-                        podcast.description.toLowerCase().includes(input.toLowerCase()))) {
+                    if (podcast.description.toLowerCase().includes(input.toLowerCase()) || podcast.title.toLowerCase().includes(input.toLowerCase())) {
                             podcastsForIndex.push(podcast)
                     }
                 })
